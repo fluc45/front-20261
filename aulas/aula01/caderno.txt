@@ -1,0 +1,14 @@
+primeiros comandos:
+cd aulas
+docker compose up -d
+docker compose exec app bash
+
+cd aula01
+npm run dev -- --host
+
+sites:
+svg repo (para baixar svg)
+amaweb.unifesp.br/ (nota de acessibilidade)
+dribbble.com/ (site de designers para inspiração)
+
+m3 theme builder
