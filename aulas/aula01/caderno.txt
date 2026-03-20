@@ -9,6 +9,7 @@ npm run dev -- --host
 sites:
 svg repo (para baixar svg)
 amaweb.unifesp.br/ (nota de acessibilidade)
-dribbble.com/ (site de designers para inspiração)
+dribbble.com/ 
+lovable.dev/ (sites de designers para inspiração)
 
 m3 theme builder
