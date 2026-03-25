@@ -13,3 +13,6 @@ dribbble.com/
 lovable.dev/ (sites de designers para inspiração)
 
 m3 theme builder
+
+container tools - extensão vscode
+Remote Development - extensão vscode
