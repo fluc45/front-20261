@@ -1,3 +1,8 @@
+npm install tailwindcss @tailwindcss/vite
+
 códigos hemet doidões:
 (aside>(header>(img+h1))+(nav>(ul>li*6)))+(main>(header>(h1+img))+h2+(section>(article>(h3+(ul>li*3)))*3))
 div>(aside>(header>(img+h1))+(nav>(ul>li*6)))+(main>(header>(h1+img))+h2+(section>(article>(h3+(ul>li*3)))*3))
+
+lembrar de colocar o plugin do tailwind no vite.config
+linha 7:   plugins: [react(), tailwindcss()],
