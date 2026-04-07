@@ -89,8 +89,6 @@ article > ul {
   }
 }
 
-
-
 .chapeu-login {
   height: 128px;
   width: 128px;
@@ -99,7 +97,6 @@ article > ul {
 
 .login {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
 }
@@ -109,15 +106,15 @@ article > ul {
   margin-bottom: 16px;
 }
 
-.login > input[type="text"],
+input[type="text"],
 input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 8px;
-  margin: 0 16px 16px 16px;
+  margin: 0 16px 16px;
   padding: 8px;
 }
 
-.login > button {
+.login > form > button {
   background-color: var(--cor-fundo);
   border: none;
   border-radius: 8px;
@@ -130,22 +127,24 @@ input[type="password"] {
   margin: 0 16px;
 }
 
-@media (min-width: 380px) {
+@media (width > 380px) {
   .login > main {
     border: 1px solid var(--cor-fundo);
-
     border-radius: 8px;
     margin: 8rem auto;
     padding: 16px 32px;
+    width: 400px;
   }
-  .login > label {
+  
+  .login > form > label {
     margin: 0;
   }
-  .login > input[type="text"],
-input[type="password"] {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 0 16px 16px 16px;
-  padding: 8px;
-}
+
+  input[type="text"],
+  input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 16px 16px;
+    padding: 8px;
+  }
 }
