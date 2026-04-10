@@ -5,13 +5,13 @@ import Notas from "./pages/Notas";
 import Requerimentos from "./pages/Requerimentos";
 
 function App() {
-  const pagina = 1;
+  const pagina = 4;
   return (
     <>
       {pagina == 1 && <Dashboard />}
-      {pagina == 2 &&<Notas />}
-      {pagina == 3 &&<Faltas />}
-      {pagina == 4 &&<Boletos />}
+      {pagina == 2 && <Notas />}
+      {pagina == 3 && <Faltas />}
+      {pagina == 4 && <Boletos />}
       {pagina == 5 && <Requerimentos />}
     </>
   );
