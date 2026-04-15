@@ -6,9 +6,9 @@ function Dashboard() {
   return (
     <>
       <Sidebar />
-      <main>
+      <main className="flex-1 m-6">
         <Topbar />
-        <h2>Bem-vindo ao portal do aluno</h2>
+        <h2 className="text-2xl font-bold mb-4">Bem-vindo ao portal do aluno</h2>
         <section>
           <Card />
           <Card />

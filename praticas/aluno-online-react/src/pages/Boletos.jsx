@@ -1,14 +1,16 @@
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
+import Card from "../components/Card";
 
 function Boletos() {
   return (
     <>
       <Sidebar />
-      <main>
+      <main className="flex-1 m-6">
         <Topbar />
-        <h2>Meus Boletos</h2>
+        <h2 className="text-2xl font-bold mb-4">Histórico de Pagamentos</h2>
         <section>
+          <Card />
         </section>
       </main>
     </>
