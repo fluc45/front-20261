@@ -6,3 +6,7 @@ div>(aside>(header>(img+h1))+(nav>(ul>li*6)))+(main>(header>(h1+img))+h2+(sectio
 
 lembrar de colocar o plugin do tailwind no vite.config
 linha 7:   plugins: [react(), tailwindcss()],
+
+img+h1+form>(label+input+p)*2+button
+
+    //const [nomeEstado, setEstado] = useState(); (como geralmente é declarado)
