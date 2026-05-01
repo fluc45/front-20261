@@ -1,0 +1,9 @@
+npm create vite@latest
+aula04
+react
+JavaScript
+No
+cd aula04
+npm install
+npm run dev
+npm install react-router
