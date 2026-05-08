@@ -6,13 +6,9 @@ function Boletos() {
   return (
     <>
       <Sidebar />
-      <main className="flex-1 m-6">
-        <Topbar />
-        <h2 className="text-2xl font-bold mb-4">Histórico de Pagamentos</h2>
-        <section>
-          <Card />
-        </section>
-      </main>
+      <Layout titulo="Meus Boletos" subtitulo="Histórico de Pagamentos">
+
+      </Layout>
     </>
   );
 }
