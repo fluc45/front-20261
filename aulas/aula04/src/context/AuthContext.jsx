@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 //cria o contexto
 const AuthContext = createContext();
@@ -10,14 +10,14 @@ function AuthProvider({ children }) {
 
   const login = (dados) => {
     //chamar a API passando dados
-    setUsuario({id:0 , nome: "Jose", email:"jose@iesb.edu.br"})
+    setUsuario({ id: 0, nome: "Jose", email: "jose@iesb.edu.br" });
     setLogado(true);
   };
 
   const logout = () => {
-    setUsuario({})
-    setLogado(false)
-  }
+    setUsuario({});
+    setLogado(false);
+  };
 
   return (
     <AuthContext.Provider value={{ logado, usuario, login, logout }}>
@@ -27,4 +27,8 @@ function AuthProvider({ children }) {
   );
 }
 
-export { AuthContext, AuthProvider };
+function useAuthContext() {
+  return useContext(AuthContext);
+}
+
+export { AuthContext, useAuthContext, AuthProvider };
