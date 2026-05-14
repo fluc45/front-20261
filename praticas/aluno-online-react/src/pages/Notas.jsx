@@ -1,19 +1,46 @@
-import Card from "../components/Card";
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Layout from "../components/Layout";
+import Tabela from "../components/Tabela";
 
 function Notas() {
+  const colunas = ["Disciplina", "A1", "A2", "A3", "Menção"];
+
+  const materias = [
+    { disciplina: "BI e Data Warehousing", A1: 0, A2: 0, A3: 0, mencao: "SR" },
+    { disciplina: "Construção de Frontend", A1: 0, A2: 0, A3: 0, mencao: "SR" },
+    {
+      disciplina: "Manuntenção de Software e Devops",
+      A1: 0,
+      A2: 0,
+      A3: 0,
+      mencao: "SR",
+    },
+  ];
+  const colunas2 = ["Disciplina", "A1", "A2", "A3", "Menção"];
+
+  const materias2 = [
+    {
+      disciplina: "BI e Data Warehousing",
+      A1: 5.4,
+      A2: 9.2,
+      A3: 0,
+      mencao: "MS",
+    },
+    {
+      disciplina: "Construção de Backend",
+      A1: 1.5,
+      A2: 3.9,
+      A3: 0,
+      mencao: "II",
+    },
+    { disciplina: "Matéria", A1: 7.2, A2: 9.7, A3: 0, mencao: "MS" },
+  ];
+
   return (
     <>
-      <Sidebar />
-      <main className="flex-1 m-6">
-        <Topbar />
-        <h2 className="text-2xl font-bold mb-4">Histórico de Notas por Semestre</h2>
-        <section>
-          <Card />
-          <Card />
-        </section>
-      </main>
+      <Layout titulo="Minhas Notas" subtitulo="Histórico de Notas por Semestre">
+        <Tabela titulos={colunas} dados={materias} header="2026.1" />
+        <Tabela titulos={colunas2} dados={materias2} header="2025.2" />
+      </Layout>
     </>
   );
 }
