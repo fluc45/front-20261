@@ -2,24 +2,37 @@ import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 
 function Notas() {
-  const colunas = ["Disciplina", "Total de Faltas", "% de Presença"];
+  const colunas = ["Disciplina", "A1", "A2", "A3", "Menção"];
 
   const materias = [
-    { disciplina: "BI e Data Warehousing", faltas: 0, presenca: "100%" },
-    { disciplina: "Construção de Frontend", faltas: 0, presenca: "100%" },
+    { disciplina: "BI e Data Warehousing", A1: 0, A2: 0, A3: 0, mencao: "SR" },
+    { disciplina: "Construção de Frontend", A1: 0, A2: 0, A3: 0, mencao: "SR" },
     {
       disciplina: "Manuntenção de Software e Devops",
-      faltas: 0,
-      presenca: "100%",
+      A1: 0,
+      A2: 0,
+      A3: 0,
+      mencao: "SR",
     },
   ];
-
-  const colunas2 = ["Disciplina", "Total de Faltas", "% de Presença"];
+  const colunas2 = ["Disciplina", "A1", "A2", "A3", "Menção"];
 
   const materias2 = [
-    { disciplina: "BI e Data Warehousing", faltas: 14, presenca: "100%" },
-    { disciplina: "Construção de Backend", faltas: 5, presenca: "90%" },
-    { disciplina: "Matéria", faltas: 8, presenca: "85%" },
+    {
+      disciplina: "BI e Data Warehousing",
+      A1: 5.4,
+      A2: 9.2,
+      A3: 0,
+      mencao: "MS",
+    },
+    {
+      disciplina: "Construção de Backend",
+      A1: 1.5,
+      A2: 3.9,
+      A3: 0,
+      mencao: "II",
+    },
+    { disciplina: "Matéria", A1: 7.2, A2: 9.7, A3: 0, mencao: "MS" },
   ];
 
   return (
