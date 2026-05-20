@@ -3,7 +3,7 @@ import "./Menu.css";
 import { Link, NavLink } from "react-router";
 
 function Menu() {
-  const { logout, usuario } = useAuthContext;
+  const { logout } = useAuthContext;
 
   const handleSair = () => {
     logout();
@@ -16,7 +16,7 @@ function Menu() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to={`/perfil/`}>Perfil</NavLink>
+          <NavLink to={`/perfil/0`}>Perfil</NavLink>
         </li>
         <li>
           <NavLink to="/about">Sobre</NavLink>

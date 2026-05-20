@@ -7,3 +7,11 @@ cd aula04
 npm install
 npm run dev
 npm install react-router
+
+cd aulas
+docker compose up -d
+docker compose exec app bash
+cd aula04
+npm run dev -- --host
+
+    form>((label+input)*4+button)
