@@ -3,9 +3,9 @@ import FormLogin from "../forms/FormLogin";
 
 function Login() {
   return (
-    <main className="content-center flex-1 flex-column justify-items-center">
-      <section className="border content-center flex-column justify-items-center">
-        <img className="size-24 flex mt-8" src={logo} alt="Imagem do Logo" />
+    <main className="flex-1 flex min-h-screen items-center justify-center p-4">
+      <section className="w-full max-w-full flex flex-col items-center justify-center gap-6">
+        <img className="size-24 flex" src={logo} alt="Imagem do Logo" />
         <h1 className="flex text-3xl font-bold pb-6">Aluno Online</h1>
         <FormLogin />
       </section>
