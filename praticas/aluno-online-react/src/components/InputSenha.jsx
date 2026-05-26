@@ -1,12 +1,12 @@
-function InputEmail({valor, erro, mudaValor}) {
+function InputSenha({ valor, erro, mudaValor }) {
   return (
     <>
-      <label htmlFor="email">Email</label>
+      <label htmlFor="senha">Senha</label>
       <br />
       <input className="border w-full p-3 rounded"
-        type="email"
-        id="email"
-        name="email"
+        type="password"
+        id="senha"
+        name="senha"
         value={valor}
         onChange={mudaValor}
       />
@@ -15,4 +15,4 @@ function InputEmail({valor, erro, mudaValor}) {
   );
 }
 
-export default InputEmail;
+export default InputSenha;
