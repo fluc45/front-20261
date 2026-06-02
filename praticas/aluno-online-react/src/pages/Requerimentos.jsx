@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 
 function Requerimentos() {
@@ -18,14 +17,13 @@ function Requerimentos() {
     { titulo: "Mudança de Turno", data: "10/10/2023", sitaucao: "Deferido" },
   ];
   return (
-    <>
-      <Layout
-        titulo="Meus Requerimentos"
-        subtitulo="Faça solicitações online para a secretaria"
-      >
-        <Tabela titulos={colunas} dados={requerimento} />
-      </Layout>
-    </>
+    <section>
+      <header>
+        <h1>Meus Requerimentos</h1>
+        <p>Faça solicitações online para a secretaria</p>
+      </header>
+      <Tabela titulos={colunas} dados={requerimento} />
+    </section>
   );
 }
 

@@ -1,5 +1,4 @@
 import Card from "../components/Card";
-import Layout from "../components/Layout";
 
 function Dashboard() {
 
@@ -22,13 +21,15 @@ function Dashboard() {
   ]
 
   return (
-    <>
-      <Layout titulo="Olá, Aluno" subtitulo="Bem-vindo ao portal do aluno">
-        <Card titulo="Mural de Avisos" items={avisos}/>
-        <Card titulo="Calendário Acadêmico" items={datas}/>
-        <Card titulo="Minhas Disciplinas" items={disciplinas}/>
-      </Layout>
-    </>
+    <section>
+      <header>
+        <h1>Olá, Aluno</h1>
+        <p>Bem-vindo ao portal do aluno</p>
+      </header>
+      <Card titulo="Mural de Avisos" items={avisos} />
+      <Card titulo="Calendário Acadêmico" items={datas} />
+      <Card titulo="Minhas Disciplinas" items={disciplinas} />
+    </section>
   );
 }
 export default Dashboard;
