@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 
 function Faltas() {
@@ -20,12 +19,14 @@ function Faltas() {
   ];
 
   return (
-    <>
-      <Layout titulo="Minhas Faltas" subtitulo="Histórico de Faltas por Semestre">
-      <Tabela titulos={colunas} dados={materias} header="2026.1"/>
-      <Tabela titulos={colunas2} dados={materias2} header="2025.2"/>
-      </Layout>
-    </>
+    <section>
+      <header>
+        <h1>Minhas Faltas</h1>
+        <p>Histórico de Faltas por Semestre</p>
+      </header>
+      <Tabela titulos={colunas} dados={materias} header="2026.1" />
+      <Tabela titulos={colunas2} dados={materias2} header="2025.2" />
+    </section>
   );
 }
 

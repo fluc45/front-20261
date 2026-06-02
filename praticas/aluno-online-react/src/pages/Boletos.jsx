@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import Tabela from "../components/Tabela";
 
 function Boletos() {
@@ -44,11 +43,13 @@ function Boletos() {
     },
   ];
   return (
-    <>
-      <Layout titulo="Meus Boletos" subtitulo="Histórico de Pagamentos">
-        <Tabela titulos={colunas} dados={mes} />
-      </Layout>
-    </>
+    <section>
+      <header>
+        <h1>Meus Boletos</h1>
+        <p>Histórico de Pagamentos</p>
+      </header>
+      <Tabela titulos={colunas} dados={mes} />
+    </section>
   );
 }
 

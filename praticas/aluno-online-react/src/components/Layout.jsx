@@ -1,16 +1,15 @@
 import Sidebar from "../components/Sidebar";
+import { Outlet } from 'react-router';
 import Topbar from "../components/Topbar";
 
-function Layout(props) {
+function Layout() {
   return (
     <>
-      <Sidebar />
-      <main className="flex-1 m-6">
-        <Topbar titulo={props.titulo} />
-        <h2 className="text-2xl font-bold mb-4">{props.subtitulo}</h2>
-        <section>
-          {props.children}
-        </section>
+      <aside>
+        <Sidebar />
+      </aside>
+      <main>
+        <Outlet />
       </main>
     </>
   );
