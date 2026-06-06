@@ -1,8 +1,10 @@
+import { Navigate, Outlet } from 'react-router';
 import Sidebar from "../components/Sidebar";
-import { Outlet } from 'react-router';
-import Topbar from "../components/Topbar";
+import { useAuthContext } from "../context/AuthContext";
 
 function Layout() {
+  const { autenticado } = useAuthContext
+
   return (
     <>
       <aside>
