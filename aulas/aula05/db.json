@@ -1,10 +1,16 @@
 {
   "produtos": [
     {
-      "nome": "banana",
-      "preco": "preço",
-      "unidade": "sim",
-      "id": "4kDWuH09-r8"
+      "id": "40ha8Gu7mi4",
+      "nome": "Laranja Pera",
+      "preco": "5.90",
+      "unidade": "Un"
+    },
+    {
+      "id": "MbwyuNvETEU",
+      "nome": "Banana",
+      "preco": "10.00",
+      "unidade": "kg"
     }
   ],
   "clientes": [],
