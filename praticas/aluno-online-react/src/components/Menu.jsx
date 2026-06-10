@@ -1,8 +1,14 @@
 import { NavLink } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 function Menu() {
-  const linkClass = ({ isActive }) =>
-    isActive ? "bg-gray-500" : "";
+  const linkClass = ({ isActive }) => (isActive ? "bg-gray-500" : "");
+
+  const { logout } = useAuth();
+
+  const handleSair = () => {
+    logout();
+  };
 
   return (
     <nav>
@@ -32,7 +38,11 @@ function Menu() {
             Requerimentos
           </NavLink>
         </li>
-        <li>Sair</li>
+        <li>
+          <NavLink to="/" onClick={handleSair}>
+            Sair
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

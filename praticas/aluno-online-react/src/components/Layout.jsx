@@ -1,18 +1,24 @@
-import { Navigate, Outlet } from 'react-router';
+import { Navigate, Outlet } from "react-router";
 import Sidebar from "../components/Sidebar";
-import { useAuthContext } from "../context/AuthContext";
+import useAuth from "../hooks/useAuth";
 
 function Layout() {
-  const { autenticado } = useAuthContext
+  const { autenticado } = useAuth();
 
   return (
     <>
-      <aside>
-        <Sidebar />
-      </aside>
-      <main>
-        <Outlet />
-      </main>
+      {autenticado ? (
+        <>
+          <aside>
+            <Sidebar />
+          </aside>
+          <main>
+            <Outlet />
+          </main>
+        </>
+      ) : (
+        <Navigate to="/login" />
+      )}
     </>
   );
 }
