@@ -1,16 +1,24 @@
+import { Navigate, Outlet } from "react-router";
 import Sidebar from "../components/Sidebar";
-import { Outlet } from 'react-router';
-import Topbar from "../components/Topbar";
+import useAuth from "../hooks/useAuth";
 
 function Layout() {
+  const { autenticado } = useAuth();
+
   return (
     <>
-      <aside>
-        <Sidebar />
-      </aside>
-      <main>
-        <Outlet />
-      </main>
+      {autenticado ? (
+        <>
+          <aside>
+            <Sidebar />
+          </aside>
+          <main>
+            <Outlet />
+          </main>
+        </>
+      ) : (
+        <Navigate to="/login" />
+      )}
     </>
   );
 }

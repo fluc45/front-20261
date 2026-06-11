@@ -18,6 +18,7 @@ function App() {
         <Route path="boletos" element={<Boletos />} />
         <Route path="requerimentos" element={<Requerimentos />} />
       </Route>
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 }
