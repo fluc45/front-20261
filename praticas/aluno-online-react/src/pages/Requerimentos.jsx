@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import Tabela from "../components/Tabela";
 
 function Requerimentos() {
@@ -23,6 +24,9 @@ function Requerimentos() {
         <p>Faça solicitações online para a secretaria</p>
       </header>
       <Tabela titulos={colunas} dados={requerimento} />
+      <NavLink to="/requerimentos/novo" className={linkClass}>
+        Requerimentos
+      </NavLink>
     </section>
   );
 }
